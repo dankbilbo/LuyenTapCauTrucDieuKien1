@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng</title>
+</head>
+<body onload="calBonus()">
+<script>
+    function calBonus()
+    {
+        let num = +prompt("nhap doanh thu");
+        if(num > 100000000){
+            alert("bonus la : " + num * 40 / 100);
+        }else if(num > 80000000){
+            alert("bonus la : " + num * 30 / 100);
+        }else if(num > 60000000){
+            alert("bonus la : " + num * 20 / 100);
+        }else
+            {
+                alert("bonus la : " + num * 10 / 100);
+            }
+    }
+</script>
+</body>
+</html>

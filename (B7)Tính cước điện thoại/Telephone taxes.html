@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body onload="calTeleTaxes()">
+<script>
+    function calTeleTaxes()
+    {
+        let time = +prompt("nhap  thoi gian goi (theo s)");
+        let type = prompt("noi mang hay ngoai mang")
+        let taxes;
+        if(type == "noi mang") {
+            if (time < 6) {
+                taxes = 80;
+            } else {
+                taxes = 80 + 13.33 * (time - 6);
+            }
+        }
+        if(type == "ngoai mang"){
+            if (time < 6) {
+                taxes = 89.09;
+            } else {
+                taxes = 89.09 + 14.85 * (time - 6);
+            }
+        }
+        document.write(taxes);
+    }
+</script>
+</body>
+</html>

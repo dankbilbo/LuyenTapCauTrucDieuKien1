@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>max a, b, c</title>
+</head>
+<body onload="checkMax()">
+<script>
+    function checkMax()
+    {
+        let a = +prompt("nhap a");
+        let b = +prompt("nhap b");
+        let c = +prompt("nhap c");
+        let max = a;
+        if(b > max)
+        {
+            max = b;
+        }
+        if(c > max)
+        {
+            max = c;
+        }
+        alert("so lon nhat la : " + max);
+    }
+</script>
+</body>
+</html>

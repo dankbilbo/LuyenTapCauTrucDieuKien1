@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp hạng học lực</title>
+</head>
+<body onload="rankingGrade()">
+<script>
+    function rankingGrade()
+    {
+        let grade = +prompt("nhap diem kiem tra");
+        let midGrade = +prompt("nhap diem kiem tra giua ki");
+        let finalGrade = +prompt("nhap diem kiem tra cuoi ki");
+        let average = (grade + midGrade + finalGrade) / 3;
+        if(average >= 8){
+            alert("xep hang A");
+        }else if(average >= 6){
+            alert("xep hang B");
+        }else if(average >= 4){
+            alert("xep hang C");
+        }else{
+            alert("xep hang D");
+        }
+    }
+</script>
+</body>
+</html>
